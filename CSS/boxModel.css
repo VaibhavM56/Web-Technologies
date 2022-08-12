@@ -1,0 +1,39 @@
+.d1 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.d2 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid blue;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.c1 {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: red;
+}
+
+.c2 {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.c21 {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: pink;
+}
