@@ -10,6 +10,10 @@ var obj = {
   address: "Bangalore",
 };
 
+var obj2 = {};
+obj2.color = "red";
+console.log(obj2.color);
+
 console.log(obj);
 
 // 2-->
@@ -19,3 +23,5 @@ obj1.name = "Vanity";
 obj1.PhNo = 7894563210;
 obj1.age = 20;
 console.log(obj1);
+
+console.log(obj1.color);
