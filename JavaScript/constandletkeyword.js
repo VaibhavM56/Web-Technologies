@@ -26,7 +26,7 @@ console.log(c); //30
 // console.log(sec);//undefined
 
 // temporal dead zone is a time between variable declaration and variable initialization
-// you cannot acccess the variables until they are assigned with some value.
+// you cannot access the variables until they are assigned with some value.
 
 let sec = "b";
 

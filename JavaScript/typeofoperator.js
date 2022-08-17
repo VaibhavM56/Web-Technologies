@@ -23,5 +23,6 @@ console.log("Hello" + " " + "World"); //Hello World
 console.log(5 + 5 + "Hello"); //10Hello
 console.log("5" + 5 + "Hi every one"); //55Hi every one
 console.log(5 + "5" + "good after noon"); //55good after noon
+console.log("good after noon" + 5 + 10);
 
 console.log("Number" + "10" + 30 + 40 + "are not correct"); //Number103040are not correct, if the numbers are surrounded by strings on both side it will be concatenated.

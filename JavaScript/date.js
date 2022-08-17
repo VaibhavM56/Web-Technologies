@@ -54,7 +54,7 @@ let yearValue = date3.toLocaleDateString("en-in", {
 });
 
 const fullDate = `${dayValue},${dateValue1}/${monthValue}/${yearValue}`;
-console.log(fullDate);
+console.log(fullDate); //Saturday,05/February/2022
 
 //looping for loop
 
