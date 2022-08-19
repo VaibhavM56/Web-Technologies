@@ -49,6 +49,36 @@ let person = {
 let personCopy = { ...person }; //shallow copy,if the object is nested it will only copy of the first layer
 person.fName = "Nuthana";
 
-person.moreDetails.bloodGroup = "AB+";
+let deepCopy = {
+  ...person,
+  moreDetails: { ...person.moreDetails },
+  moreDetails: { ...person.moreDetails.address },
+};
+
+person.moreDetails.bloodGroup = "AB+"; //deep copy
 console.log(person); //fName:"Nuthana" bloodgroup:AB+
 console.log(personCopy); //fName:"Nayana" bloddgroup:A+
+
+//deep copy will copy all the levels or object
+//new object will created with new reference
+
+//JSON.parse():this will convert json to js object
+//JSON.stringify will convert from object to JSON object
+
+const personCopyJson = JSON.parse(JSON.stringify(person));
+console.log(personCopyJson);
+
+//destructuring
+
+let person2 = {
+  name: "Avi",
+  ph: 2344455,
+  address: "Tumkur",
+  email: "avi@gmail.com",
+};
+
+let { name, ph, address, email } = person2;
+console.log(name);
+
+const [a, b] = [23, 45]; //array sestructuring
+console.log(a);

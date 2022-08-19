@@ -31,22 +31,21 @@
 // primeNumber(9);
 
 //WAP for bubblesort
-let swap = (a, b) => {
-  let t = a;
-  a = b;
-  b = t;
-};
-let bubblesort = () => {
-  let arr = [9, 20, 62, 2, 0, 98, 21];
 
-  for (let i = 0; i < arr.length - 1; i++) {
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[j] > arr[j + 1]) {
-        swap(arr[j], arr[j + 1]);
-      }
-    }
-  }
-  console.log(arr);
-};
+// let bubblesort = () => {
+//   let arr = [9, 20, 62, 2, 0, 98, 21];
+//   let n = arr.length;
+//   let temp = 0;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 1; j < n - i; j++) {
+//       if (arr[j - 1] > arr[j]) {
+//         temp = arr[j - 1];
+//         arr[j - 1] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   console.log(arr);
+// };
 
-bubblesort();
+// bubblesort();

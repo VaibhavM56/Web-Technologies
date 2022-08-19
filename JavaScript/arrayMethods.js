@@ -177,3 +177,70 @@ hobbies.forEach(function (val, ind, arr) {
 //includes
 console.log(hobbies.includes("cricket")); //true,it returns boolean
 console.log(hobbies.includes("creet")); //false,it returns boolean
+
+//find
+//find method will take a callback function
+//returns the first element that matches condition
+let arrFind = [30, 1, 4, 5, 9, 65, 8, 4];
+
+const found = arrFind.find((value) => value > 10);
+console.log(found);
+
+//sort()
+//it will consider the values as string so,without argument it will sort according to string(0-9)
+//It will take call back function
+//it will arrange an element in an ascending or desceding order
+//it will change the original array
+//sort without callback function (string)
+arrFind.sort();
+console.log(arrFind, "0-9 order as string");
+
+//with callback function
+//descending order
+arrFind.sort((a, b) => {
+  return b - a;
+});
+console.log(arrFind, "descending order");
+
+//Ascending order
+arrFind.sort((a, b) => {
+  return a - b;
+});
+console.log(arrFind, "ascending order");
+
+//splice method
+//we use splicce method to add or remove the elements in mid of the array
+//it will affect your original array
+//it returns the removed elements if any element is removed
+//arrayData.splice(start-index,no.of elements to be removed,new elements to be added in their place)
+
+let spliceArray = [2, 4, 7, 3, 5, 6, 8, 9, 10];
+
+let splicedArray = spliceArray.splice(3, 2, 56, 78);
+console.log(spliceArray);
+console.log(splicedArray); //splice method will return the deleted elements
+
+//adding element without deletion
+let splicedArray1 = spliceArray.splice(3, 0, 30, 50);
+console.log(spliceArray);
+console.log(splicedArray1); // if no element is removed empty array will come.
+
+//slice method
+//slice method will return the new array
+//it will take two arguments start 0
+// to delete an element in mid of the array
+
+let sliceArray = ["CIT", "SSIT", "KIT", "NIST", "Christ"]; //original array
+
+const data2 = sliceArray.slice(1); //ssit kit nist,christ
+const data3 = sliceArray.slice(2); //KIT,NIST,christ
+const data4 = sliceArray.slice(2, 4); //first argument is excluded and second argument excluded
+const data5 = sliceArray.slice(-2);
+const data6 = sliceArray.slice(2, -1);
+
+console.log(sliceArray, "original array");
+console.log(data2);
+console.log(data3);
+console.log(data4);
+console.log(data5);
+console.log(data6);
