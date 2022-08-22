@@ -49,3 +49,26 @@
 // };
 
 // bubblesort();
+
+
+//factorial
+
+// let factorial = (num) =>{
+//   let sum = 1;
+//   let i = 1;
+//   while(i<=num)
+//   {
+//     sum = sum*i;
+//     i++;
+//   }
+//   console.log(sum);
+// }
+
+// factorial(5);
+
+//second largest number
+
+let secondLargest = () => {
+  let arr=[9, 20, 62, 2, 0, 98, 21];
+  
+}

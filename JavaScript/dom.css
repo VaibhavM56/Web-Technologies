@@ -1,0 +1,10 @@
+.test{
+    /* display: none; */
+    visibility: hidden;
+    background-color:red ;
+}
+
+
+/* display:none --> the removes the entire element
+
+visibility:hidden --> it preserves space required by the element */

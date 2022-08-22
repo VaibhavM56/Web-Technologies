@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="name">Namana</h1>
+    <!-- <button onclick="changeName()">click</button> -->
+    <button onclick="changeName('Vaibhav')">click</button>
+
+    <h2 id="changeColor" 
+    onmouseover="changeColor()" 
+    onmouseleave="removeColor()">
+    This is hover experiment</h2>
+
+    <div>
+        <form >
+            <p><label for="text">Text Color</label></p>
+            <select onChange="setBodyAttr('text',this.options[this.selectedIndex].value);" id = "text">
+
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+            </select>
+        </form>
+    </div>
+    <script src="./events.js"></script>
+</body>
+</html>
