@@ -17,7 +17,7 @@ const fetchPosts = () => {
         });
         postData += "";
         const divElement = document.getElementById("users");
-        divElement.innerText = postData;
+        divElement.innerHTML = postData;
     })
     .catch((err)=>{
         console.log(err);
