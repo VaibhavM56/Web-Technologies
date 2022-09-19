@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="events">
+      <h1>Counter:{{counter}}</h1>
+      <button v-on:click="decrement">Decrement</button>
+      <button v-on:click="increment">Increment</button>
+
+      <!-- v-once to preserve initial value 
+        and it will be only evaluated once -->
+      <h3 v-once>Starting Counter:{{counter}}</h3>
+
+      <form v-on:submit.prevent="handleSubmit">
+        <input type="text" placeholder="Enter Age" />
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
