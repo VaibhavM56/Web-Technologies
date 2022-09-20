@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="dataBinding">
+      <div>
+        <h1>Counter:{{counter}}</h1>
+        <h1>Double Counter:{{doubleCounter}}</h1>
+        <button v-on:click="decrement">Decrement</button>
+        <button v-on:click="increment">Increment</button>
+      </div>
+
+      <input type="text" placeholder="Enter FirstName" v-model="name" />
+
+      <!-- <h2>Your name:{{outputFullname}}</h2> -->
+      <!-- fullname here is present in computed property -->
+      <h2>Your name:{{fullname}}</h2>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

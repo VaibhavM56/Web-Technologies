@@ -1,0 +1,22 @@
+5.Directives are instruction for VueJS to do things in a certain way.
+
+v-html:Update the element's innerHTML.
+v-for:Render the element or template block multiple times based on the source data.
+v-on:Attach an event listener to the element.
+v-text:Update the element's text content.
+v-model:Create a two-way binding on a form input element or a component.
+v-once:to preserve initial value and it will be only evaluated once
+
+
+
+
+
+4.Event:-
+1. v-on:click
+2. v-on:submit
+3. v-on:scroll
+4. v-on:keyup
+5. v-on:change
+6. v-on:mouseover
+7. v-on:mouseout
+8. v-on:input
